@@ -24,11 +24,35 @@ const Transition = () => {
         initial='initial'
         animate='animate'
         exit='exit'
-        transition={{ delay: '0.2', duration: 0.6, ease: 'easeInOut' }}>
-        1
-      </motion.div>
-      <div>2</div>
-      <div>3</div>
+        transition={{
+          delay: '0.2',
+          duration: 0.6,
+          ease: 'easeInOut',
+        }}></motion.div>
+
+      <motion.div
+        className='w-screen h-screen fixed top-0 bottom-0 right-full z-20 bg-[#3b2d71]'
+        variants={transitionVariants}
+        initial='initial'
+        animate='animate'
+        exit='exit'
+        transition={{
+          delay: '0.4',
+          duration: 0.6,
+          ease: 'easeInOut',
+        }}></motion.div>
+
+      <motion.div
+        className='w-screen h-screen fixed top-0 bottom-0 right-full z-10 bg-[#4b3792]'
+        variants={transitionVariants}
+        initial='initial'
+        animate='animate'
+        exit='exit'
+        transition={{
+          delay: '0.6',
+          duration: 0.6,
+          ease: 'easeInOut',
+        }}></motion.div>
     </>
   )
 }
