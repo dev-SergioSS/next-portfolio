@@ -62,7 +62,7 @@ const ParticleContainers = () => {
             directions: 'none',
             enable: true,
             outModes: {
-              default: 'bounce',
+              default: 'bounce-horizontalce',
             },
             random: false,
             speed: 1,
